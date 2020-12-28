@@ -12,8 +12,10 @@ int main(){
     t=L.erase(t); // t가 가리키는 값을 제거, 그 다음 원소인 5의 위치를 반환
                     // 10 6 1 5, t가 가리키는 값은 5
     cout<<*t<<'\n'; // 5
+    // C++ 11이상이라면 가능
     for(auto i:L) cout<<i<<' ';
     cout<<'\n';
+    // C++ 11미만은 이렇게 불편하게 해야함
     for(list<int>::iterator it=L.begin(); it!=L.end();it++)
         cout<<*it<<' ';
 }
