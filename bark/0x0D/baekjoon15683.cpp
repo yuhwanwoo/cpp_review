@@ -46,6 +46,7 @@ int main(){
                 board2[i][j]=board1[i][j];
             }
         }
+        //cout<<tmp<<'\n';
         int brute = tmp;
         for(int i=0;i<cctv.size();i++){
             int dir=brute%4;
@@ -79,7 +80,7 @@ int main(){
         for(int i=0;i<n;i++){
             for(int j=0; j<m; j++){
                 val+=(board2[i][j]==0);
-                cout<<(board2[i][j]==0);
+                // cout<<(board2[i][j]==0);
             }
         }
         mn=min(mn,val);
