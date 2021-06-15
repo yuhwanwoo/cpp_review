@@ -2,7 +2,7 @@
 using namespace std;
 
 int n=15;
-int arr[1000001];
+int arr[1000001]={0,0};
 int d=3;
 int p10[3];
 
